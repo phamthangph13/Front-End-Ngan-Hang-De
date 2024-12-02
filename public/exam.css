@@ -1,0 +1,95 @@
+@media screen, pagedjs-ignore {
+  .pagedjs_pages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: lightgray;
+  }
+  .pagedjs_page {
+    margin-bottom: 5mm;
+    border: 1px solid black;
+    background: white;
+  }
+}
+@page {
+  size: A4;
+  @bottom-right {
+    content: "Trang " counter(page) "/" counter(pages) " " var(--exam-code);
+  }
+}
+.exam {
+  color: #000;
+}
+.exam .exam-title {
+  margin-bottom: 20px;
+}
+.exam .exam-title .exam-info {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  text-align: center;
+}
+.exam .exam-title .exam-info .col1 p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.exam .exam-title .exam-info .col1 .exam-type {
+  border: 1px solid black;
+  display: inline;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.exam .exam-title .exam-info .col1 .pagenum {
+  margin-top: 10px;
+}
+.exam .exam-title .exam-info .col1 .pagenum span:after {
+  content: counter(pages);
+}
+.exam .exam-title .exam-info .col2 p {
+  margin: 0;
+  word-wrap: break-word;
+}
+.exam .exam-title .exam-info-2 {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+}
+.exam .exam-title .exam-info-2 .col1 .student-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-width: 350px;
+  overflow-x: hidden;
+}
+.exam .exam-title .exam-info-2 .col1 .student-info ul li span {
+  background: white;
+}
+.exam .exam-title .exam-info-2 .col1 .student-info ul li::before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content: ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . ";
+}
+.exam .exam-title .exam-info-2 .col2 {
+  justify-self: end;
+}
+.exam .exam-title .exam-info-2 .col2 .examcode {
+  border: 1px solid black;
+  padding: 5px 10px;
+}
+.exam .exam-end {
+  text-align: center;
+  margin-top: 20px;
+}
+.exam .exam_answer {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+}
+.exam .exam_answer .answer {
+  padding: 10px;
+  width: 60px;
+  margin: 0;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/*# sourceMappingURL=exam.css.map */

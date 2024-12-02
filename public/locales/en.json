@@ -1,0 +1,92 @@
+﻿{
+  "question": {
+    "title": "Question",
+    "display": "Question",
+    "content": "Question content",
+    "answer": "Answer",
+    "status": "Status",
+    "type": {
+      "title": "Question type",
+      "multiple-choice": "Multiple choice",
+      "essay": "Essay",
+      "check-box": "Check box",
+      "short-answer": "Short answer"
+    }
+  },
+  "exam": {
+    "title": "Exam",
+    "name": "Exam name",
+    "description": "Description",
+    "duration": "Duration",
+    "status": {
+      "title": "Status",
+      "draft": "Draft",
+      "published": "Published",
+      "archived": "Archived"
+    }
+  },
+  "class": "Class",
+  "subject": "Subject",
+  "crud": {
+    "create": "Create {name}",
+    "edit": "Edit {name}",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "add": "Add {name}",
+    "single": "Single {name}",
+    "find": "Find {name}",
+    "view": "View",
+    "clone": "Clone",
+    "list": "{name} list",
+    "name": "{name} Name",
+    "rows-per-page-message": "Rows per page"
+  },
+  "setting": {
+    "title": "{name} Setting",
+    "language": "Language",
+    "theme": "Theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System {name}"
+  },
+  "question_editor_hgroup": {
+    "hg1": "Click on the title and answer to show / hide the editor",
+    "hg2": "Hold and drag the question to move it",
+    "hg3": "Click on the 'Save' button to save the question",
+    "hg4": "Click on the 'Cancel' button to discard changes"
+  },
+  "difficulty": {
+    "title": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "home": "Home",
+  "help": "Help",
+  "search": "Search",
+  "theme": {
+    "title": "Theme",
+    "dark": "Dark",
+    "light": "Light"
+  },
+  "action": {
+    "title": "Action",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "finish": "Finish",
+    "start": "Start",
+    "cancel": "Cancel",
+    "refresh": "Refresh"
+  },
+  "auth": {
+    "title": "Authentication",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "method": "Method",
+  "none": "None",
+  "bank": "{name} Bank"
+}

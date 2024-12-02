@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    margin: 0;
+}
+
+html {
+    --tag-question-answer-correct-color: #a0ffa0;
+    --tag-ipt-bg-color: #282828;
+    --tag-ipt-icon-color: #c9c9c9;
+    --modal-border-color: #ffffff0c;
+    --tag-object-border: 1px solid #0000;
+    --tag-object-bg: rgba(255, 255, 255, 0.07);
+    --base-form-input-familiy: "Bitter", serif !important;
+    font-family: "Bitter", serif;
+}
+
+html.dark {
+    color-scheme: dark;
+    --app-bg-color: #151515;
+    --app-sidebar-bg-color: #151515;
+    --app-content-bg-color: #ffffff18;
+    --app-icon-color: #c9c9c9;
+    --app-text-color: #c9c9c9;
+    --input-text-bar-border: #c9c9c9;
+    --input-text-bar-text: #c9c9c9;
+    --head-crud-bg-color: #4d4d4d;
+    --head-crud-btn-bg-color: #424242;
+    --head-crud-btn-border-left-color: #c9c9c9;
+    --head-crud-btn-bg-color-hover: #333;
+    --head-crud-font-color: #c9c9c9;
+    --tag-object-border: 1px solid #0000;
+    --tag-object-bg: rgba(255, 255, 255, 0.03);
+    --tag-object-tag-bg: rgba(255, 255, 255, 0.07);
+    /*--tag-object-tag-hover-bg: #333;*/
+    /*--tag-object-tag-border: 1px solid #0000;*/
+    --base-button-bg-color: #ffffff;
+    --base-button-bg-color-hover: rgba(255, 255, 255, 0.6);
+    --base-button-text-color: rgba(0, 0, 0, 0.84);
+    --base-button-text-color-hover: #000000;
+    --base-form-input-font-color: #fff;
+    --auth-panel-background-color: rgba(255, 253, 253, 0.07);
+    --base-form-input-border-color: #c9c9c9;
+    --base-form-input-border-color-focus: #fff;
+    --base-form-option-background-color: #333;
+    --base-form-option-background-color-hover: #424242;
+    --modal-background-color: #333;
+    --tabs-wapper-item-active-color: #fff;
+}
+
+html:not(.dark) {
+    color-scheme: light;
+    --app-bg-color: #efecec;
+    --app-sidebar-bg-color: #efecec;
+    --app-content-bg-color: #fff;
+    --app-icon-color: #000;
+    --app-text-color: #000;
+}
+
+.theme-transition::view-transition-old(root),
+.theme-transition::view-transition-new(root) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+.theme-transition::view-transition-old(root) {
+    z-index: 1;
+}
+.theme-transition::view-transition-new(root) {
+    z-index: 9999;
+}
+.theme-transition.dark::view-transition-old(root) {
+    z-index: 9999;
+}
+.theme-transition.dark::view-transition-new(root) {
+    z-index: 1;
+}
+
+[data-web-app] {
+    background-color: var(--app-bg-color);
+}

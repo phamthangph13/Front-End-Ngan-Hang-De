@@ -1,0 +1,92 @@
+﻿{
+  "question": {
+    "title": "Câu hỏi",
+    "display": "Câu",
+    "content": "Nội dung câu hỏi",
+    "answer": "Đáp án",
+    "status": "Trạng thái",
+    "type": {
+      "title": "Loại câu hỏi",
+      "multiple-choice": "Trắc nghiệm",
+      "essay": "Tự luận",
+      "check-box": "Chọn nhiều đáp án",
+      "short-answer": "Trả lời ngắn"
+    }
+  },
+  "exam": {
+    "title": "Đề thi",
+    "name": "Tên đề thi",
+    "description": "Mô tả",
+    "duration": "Thời gian làm bài",
+    "status": {
+      "title": "Trạng thái",
+      "draft": "Nháp",
+      "published": "Đã xuất bản",
+      "archived": "Đã lưu trữ"
+    }
+  },
+  "class": "Lớp",
+  "subject": "Môn học",
+  "crud": {
+    "create": "Tạo {name}",
+    "edit": "Chỉnh sửa {name}",
+    "delete": "Xóa",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "add": "Thêm {name}",
+    "single": "{name} đơn",
+    "find": "Tìm {name}",
+    "view": "Xem",
+    "clone": "Nhân bản",
+    "list": "Danh sách {name}",
+    "name": "Tên {name}",
+    "rows-per-page-message": "Số hàng mỗi trang"
+  },
+  "setting": {
+    "title": "Cài đặt {name}",
+    "language": "Ngôn ngữ",
+    "theme": "Giao diện",
+    "dark": "Tối",
+    "light": "Sáng",
+    "system": "{name} Hệ thống"
+  },
+  "question_editor_hgroup": {
+    "hg1": "Ấn vào đề và đáp án để hiển thị / ẩn trình soạn thảo",
+    "hg2": "Nhấn giữ và kéo câu hỏi để di chuyển",
+    "hg3": "Ấn vào nút 'Lưu' để lưu câu hỏi",
+    "hg4": "Ấn vào nút 'Hủy' để hủy bỏ thay đổi"
+  },
+  "difficulty": {
+    "title": "Độ khó",
+    "easy": "Dễ",
+    "medium": "Trung bình",
+    "hard": "Khó"
+  },
+  "home": "trang chủ",
+  "help": "hỗ trợ",
+  "search": "tìm kiếm",
+  "theme": {
+    "title": "Chủ đề",
+    "dark": "Tối",
+    "light": "Sáng"
+  },
+  "action": {
+    "title": "Hành động",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước",
+    "submit": "Nộp",
+    "finish": "Kết thúc",
+    "start": "Bắt đầu",
+    "cancel": "Hủy",
+    "refresh": "Làm mới"
+  },
+  "auth": {
+    "title": "Xác thực",
+    "login": "Đăng nhập",
+    "logout": "Đăng xuất"
+  },
+  "method": "Phương pháp",
+  "none": "Không chọn",
+  "bank": "Ngân hàng {name}"
+}

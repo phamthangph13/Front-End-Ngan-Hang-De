@@ -1,0 +1,22 @@
+﻿- Thêm loại ~~check-box , short-answer, long-answer ~~, fill-in-the-blank
+- Hoàn thiện render đề thi sang PDF (frontend) Backend 80%
+- ~~Thêm chức năng trạng thái đề thi~~ REMOVED: NHÓM KHÁC
+- Thêm chức năng render đáp án
+- Thêm tìm kiếm cho câu hỏi, đề thi 
+- Thêm filter, orderby 
+- Khi ấn vào tag ví dụ như môn:Toán tìm kiếm theo mục đó 
+- Thêm phiên dịch tiếng anh và tiếng việt cho ứng dụng
+- Hoàn hiện lưu trữ cho backend (exam)
+- ~~Thêm chức năng thêm môn (frontend) Backend~~
+- ~~Thêm câu hỏi từ ngân hàng đề vào đề thi bằng Kéo thả~~
+- Thêm Crud cho exam (add, edit, remove)
+- Thêm crud cho ~~question~~,
+- Thêm crud cho Question Group (~~add, edit~~, remove)
+- Thêm Crud cho subject (~~Add, edit~~, remove)
+- Tạo câu hỏi rồi thêm trực tiếp vào đề thi
+- Thêm câu hỏi từ ngân hàng đề rồi sửa trong đề rồi thêm lại vào đề thi
+- Tùy biến số điểm của câu hỏi
+- Tạo câu hỏi tương tự với với một template nhất định
+- Chỉ thêm n trong m câu hỏi của nhóm câu hỏi vào đề
+
+- ~~Làm hoàn thiện code not POC~~

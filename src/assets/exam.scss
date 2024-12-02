@@ -1,0 +1,211 @@
+﻿// #region PagedJS
+
+@media screen, pagedjs-ignore {
+    .pagedjs_pages {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: lightgray;
+    }
+
+    .pagedjs_page {
+        margin-bottom: 5mm;
+        border: 1px solid black;
+        background: white;
+    }
+}
+
+@page {
+    // adjust as needed
+    // margin: 2cm 2cm 2cm 2.5cm;
+
+    size: A4;
+    // size: 140mm 200mm;
+    // bleed: 6mm;
+
+    @bottom-right {
+        // --test : "Trang " counter(page) "/" counter(pages);
+        // content: '1';
+        content: "Trang " counter(page) "/" counter(pages) " " var(--exam-code);
+    }
+}
+
+
+// #endregion
+
+.exam {
+    color: #000;
+
+    .exam-title {
+        margin-bottom: 20px;
+
+        .exam-info {
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            text-align: center;
+
+            .col1 {
+                p {
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
+
+                .exam-type {
+                    border: 1px solid black;
+                    display: inline;
+                    padding: 5px 10px;
+                    // margin-top: 10px;
+                    text-transform: uppercase;
+                }
+
+                .pagenum {
+                    margin-top: 10px;
+
+                    span:after {
+                        content: counter(pages);
+                    }
+                }
+            }
+
+            .col2 {
+                p {
+                    margin: 0;
+                    word-wrap: break-word;
+                }
+            }
+        }
+
+        .exam-info-2 {
+            display: grid;
+            grid-template-columns: 1.5fr 0.5fr;
+
+            .col1 {
+                .student-info {
+                    ul {
+                        list-style-type: none;
+                        padding: 0;
+                        margin: 0;
+                        max-width: 350px;
+                        overflow-x: hidden;
+
+                        li span {
+                            background: white;
+                        }
+
+                        li::before {
+                            float: left;
+                            width: 0;
+                            white-space: nowrap;
+                            content: ". . . . . . . . . . . . . . . . . . . . "
+                                ". . . . . . . . . . . . . . . . . . . . " ". . . . . . . . . . . . . . . . . . . . "
+                                ". . . . . . . . . . . . . . . . . . . . ";
+                        }
+                    }
+                }
+            }
+
+            .col2 {
+                justify-self: end;
+
+                .examcode {
+                    border: 1px solid black;
+                    // display: inline;
+                    padding: 5px 10px;
+                    // margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    .exam-body {
+        //    counter-reset: section 0;
+
+        // .question {
+        //     p {
+        //         margin: 0;
+        //     }
+
+        //     .title {
+        //         // --test: attr(data-question-num);
+
+        //         // &::before {
+        //         //     font-weight: bold;
+        //         //     content: var(--question-num);
+        //         //     display: inline;
+        //         // }
+
+        //         &:not(:has(div)) {
+        //             &::before {
+        //                 font-weight: bold;
+        //                 content: var(--question-num);
+        //                 display: inline;
+        //             }
+        //         }
+
+        //         & > div:first-child::before {
+        //             font-weight: bold;
+        //             content: var(--question-num); //
+        //             // color: red;
+        //             // border: 1px solid red;
+        //             // width: 20px;
+        //         }
+        //     }
+
+        //     // img {
+        //     //     // display: block;
+        //     // }
+
+        //     .answer {
+        //         // display: none;
+        //         // code
+        //         margin: 0;
+
+        //         display: flex;
+        //         flex-direction: column;
+        //         flex-flow: row wrap;
+        //         list-style-type: upper-alpha;
+                
+
+        //         li {
+        //             // flex-grow: 1;
+        //             // flex: calc(100% / 4);
+        //             padding: 0 0 5px 0;
+        //             column-gap: 20px;
+        //             container-type: normal;
+        //             container-name: answer;
+
+        //             min-width: 25%;
+        //             // p {
+        //             //     margin: 0;
+        //             // }
+        //         }
+        //     }
+        // }
+    }
+
+    .exam-end {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .exam_answer {
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+
+        .answer {
+            padding: 10px;
+            // font-size: 1.5rem;
+            // font-weight: bold;
+            // border: 1px solid #000;
+            // word-wrap: none;
+            // display: inline-block;
+            width: 60px;
+            margin: 0;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    }
+}
+

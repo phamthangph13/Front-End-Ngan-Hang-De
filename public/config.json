@@ -1,0 +1,15 @@
+﻿{
+    "version": "9cbbab5b-cb99-42c7-a04f-36a7e1496fd4",
+    "supportedLanguages": [
+        {
+            "lang": "en",
+            "region": "US",
+            "name": "English"
+        },
+        {
+            "lang": "vi",
+            "region": "VN",
+            "name": "Tiếng Việt"
+        }
+    ]
+}
