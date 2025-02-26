@@ -177,6 +177,15 @@ const routes = [
         }
     },
     {
+        name: 'help',
+        path: '/help',
+        component: () => import('@/views/HelpView.vue'),
+        meta: {
+            layout: DashBoardLayout
+        }
+        
+    },
+    {
         name: 'auth',
         path: '/auth',
         component: () => import('@/views/AuthView.vue'),

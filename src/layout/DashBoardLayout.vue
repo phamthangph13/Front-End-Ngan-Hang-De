@@ -1,6 +1,9 @@
 <template>
     <aside class="sidebar">
-        <div class="logo">Logo</div>
+        <div class="logo">
+    <img src="https://cmc-u.edu.vn/wp-content/uploads/2022/04/favicon-2.png" alt="Logo" />
+</div>
+
         <ul class="top-links">
             <SidebarItem @click="settingStore.toggleSidebar()">
                 <FontAwesomeIcon :icon="faBars" />
@@ -277,12 +280,13 @@ onMounted(() => {
 	flex-direction: column;
 	z-index: 0;
 
-	.logo {
-		@include top;
-		// background-color: #333;
-		// color: white;
-		// text-align: center;
-	}
+	.logo img {
+    width: 60%;  /* Điều chỉnh kích thước phù hợp */
+    height: 60%; /* Đảm bảo tỷ lệ kích thước không bị méo */
+    object-fit: contain; /* Đảm bảo logo không bị cắt xén */
+    margin-top: 10px; /* Đẩy logo xuống một chút */
+}
+
 
 	@mixin links {
 		list-style: none;
